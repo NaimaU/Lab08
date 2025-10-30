@@ -16,7 +16,7 @@ public class CustomList {
      * @param city
      */
     public void addCity(City city) {
-        //cities.add(city);
+        cities.add(city);
     }
 
     public int getCount(){
@@ -27,7 +27,7 @@ public class CustomList {
     
 
     // Will be implemented later using TDD (leave blank for now)
-//    public boolean hasCity(City city) {
-//
-//    }
+    public boolean hasCity(City city) {
+            return cities.contains(city);
+    }
 }
