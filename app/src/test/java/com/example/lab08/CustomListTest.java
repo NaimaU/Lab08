@@ -30,20 +30,20 @@ public class CustomListTest {
         });
     }
 
-//    @Test
-//    void testCountCities() {
-//        CityList cityList = mockCityList();
-//        assertEquals(1, cityList.countCities());
-//
-//        // Create another city object
-//        City city = new City("Charlottetown", "Prince Edward Island");
-//        cityList.add(city);
-//        assertEquals(2, cityList.countCities());
-//
-//        // delete said city object
-//        cityList.delete(city);
-//        assertEquals(1, cityList.countCities());
-//    }
-//}
+    @Test
+    void testCountCities() {
+        CustomList cityList = new CustomList();
+        assertEquals(0, cityList.countCities());
+
+        // Create a city object
+        City city = new City("Charlottetown", "Prince Edward Island");
+        cityList.addCity(city);
+        assertEquals(1, cityList.countCities());
+
+        // delete said city object
+        cityList.delete(city);
+        assertEquals(0, cityList.countCities());
+    }
+}
 
 }
